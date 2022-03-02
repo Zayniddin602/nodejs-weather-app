@@ -7,7 +7,7 @@ const {BASE_URL, API_KEY} = process.env;
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-
+//
 app.get('/', (req, res) => {
     res.status(200).send('Basic Weather App')
 })
